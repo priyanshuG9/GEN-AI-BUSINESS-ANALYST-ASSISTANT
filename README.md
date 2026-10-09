@@ -48,67 +48,7 @@ Business Analysts frequently spend time translating stakeholder requirements int
 
 Customers should be able to cancel their hotel bookings through the mobile application.
 
-**Expected Output Sections:**
 
-1. Requirement Summary
-2. Functional Requirements
-3. Agile User Story
-4. Acceptance Criteria
-5. Test Scenarios
-6. Assumptions and Clarifications
 
-The generated output should be reviewed by a Business Analyst before being used as a final business specification.
 
-## Dataset
 
-The project includes eight sample hotel business requirements covering:
-
-* Booking
-* Payment
-* Housekeeping
-* Reporting
-* Customer management
-
-The sample dataset is used to demonstrate requirement processing and AI-assisted documentation.
-
-## Setup and Execution
-
-This project was developed for Google Colab.
-
-1. Open the notebook in Google Colab.
-2. Install the required Python dependencies.
-3. Configure a Gemini API key in Colab Secrets using the name `GEMINI_API_KEY`.
-4. Ensure the key has access to the selected Gemini model.
-5. Run the notebook cells in order.
-6. Enter a business requirement when prompted.
-7. Review the generated analysis and exported CSV files.
-
-### Dependencies
-
-* `google-genai`
-* `pandas`
-
-The original notebook also pins certain package versions. Use the dependency versions documented in the notebook if compatibility issues arise.
-
-## Security
-
-Do not hard-code or commit API keys, credentials, or other secrets. Store the Gemini API key securely using Colab Secrets or an appropriate environment-variable-based configuration.
-
-## Limitations
-
-* AI-generated documentation may contain inaccuracies and requires human validation.
-* Acceptance criteria and test scenarios depend on the clarity and completeness of the input requirement.
-* Business rules, edge cases, and non-functional requirements may need further stakeholder clarification.
-* The current implementation demonstrates a command-line workflow in Colab rather than a deployed web application.
-
-## Future Enhancements
-
-* Build a Streamlit interface for interactive requirement analysis.
-* Add export options for BRD and FRD documents.
-* Support batch uploads of requirements from CSV or Excel.
-* Add requirement traceability between business requirements, user stories, and test cases.
-* Introduce validation checks and human review before approving generated documentation.
-
-## Author
-
-Developed as a portfolio project to explore the practical application of Generative AI in Business Analysis and requirements engineering.
